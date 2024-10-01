@@ -65,16 +65,21 @@ div {
   max-width: 100%;
 }
 
-#Section1, #Section2, #Section3, #Section4 {
+#section1, 
+#section2, 
+#section3, 
+#subscribe {
   scroll-margin-top: 178px;
   padding: 0 16px;
 }
 
-#Section1, #Section3 {
+#section1, 
+#section3 {
   background-color: rgb(245, 240, 230);
 }
 
-#Section2, #Section4{
+#section2,
+#subscribe {
   background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
   color: white;
 }
@@ -96,16 +101,16 @@ div {
   padding: 16px 8px;
 }
 
-#Section4 {
+#subscribe {
   padding-bottom: 32px;
 }
 
-#Section4 p {
+#subscribe p {
   font-weight: bold;
   font-size: 32px;
 }
 
-#Section4 form {
+#subscribe form {
   display: flex;
   gap: 6px;
   font-size: 20px;
