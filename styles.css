@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,16 +61,20 @@ div {
 }
 
 /* Sections */
-#Section1, #Section2, #Section3 {
-  scroll-margin-top: 46px;
-  padding: 0 8px;
+.section-container img {
+  max-width: 100%;
+}
+
+#Section1, #Section2, #Section3, #Section4 {
+  scroll-margin-top: 178px;
+  padding: 0 16px;
 }
 
 #Section1, #Section3 {
   background-color: rgb(245, 240, 230);
 }
 
-#Section2 {
+#Section2, #Section4{
   background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
   color: white;
 }
@@ -75,12 +83,53 @@ div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  max-height: 500px;
-  overflow: scroll;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 .wrapper div {
   background-color: #182b49;
   color: white;
+  max-height: 500px;
+  overflow: scroll;
   padding: 16px 8px;
+}
+
+#Section4 {
+  padding-bottom: 32px;
+}
+
+#Section4 p {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#Section4 form {
+  display: flex;
+  gap: 6px;
+  font-size: 20px;
+}
+
+/* Responsive Web Design */
+@media (max-width: 800px) {
+  #navbar a {
+    display: none;
+  }
+
+  #navbar img {
+    max-width: 75%;
+  }
+
+  h2 {
+    font-size: 24px; /* CHANGE */
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
